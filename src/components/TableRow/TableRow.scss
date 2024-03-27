@@ -1,0 +1,21 @@
+.table__row-body {
+  height: 64px;
+
+  &:nth-child(even) {
+  background-color: #F9FAFC;
+  }
+}
+
+.table__image {
+  width: 100px;
+  height: 100px;
+}
+
+.table__url {
+  text-decoration: none;
+  color: #2E3B52;
+
+  &:hover {
+    opacity: .7;
+  }
+}
