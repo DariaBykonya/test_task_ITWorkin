@@ -1,0 +1,96 @@
+.table {
+  border-collapse: collapse;
+  max-width: 1020px;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.table__row-head {
+  background-color: #F9FAFC;
+  height: 40px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #464F60;
+  white-space: nowrap;
+}
+
+.table-wrapper {
+  width: 1020px;
+  overflow-x: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.pagination__per {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 0;
+  padding: 2px 4px;
+  border: 1px solid rgb(187, 190, 195);
+
+  &::before {
+    content: url('../../../public/images/arrow.png');
+    width: 16px;
+    height: 16px;
+    transform: rotate(180deg);  
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: .7;
+  }
+}
+
+.pagination__next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 0;
+  padding: 2px 4px;
+  border: 1px solid rgb(187, 190, 195);
+
+  &::before {
+  content: url('../../../public/images/arrow.png');
+  width: 16px;
+  height: 16px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: .7;
+  }
+}
+
+.pagination__pages {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  gap: 2px;
+  color: #687182;
+}
+
+.pagination__current-page {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #2E3B52;
+}
+
+.pagination__next-page {
+  margin: 0;
+}
